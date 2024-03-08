@@ -1,0 +1,1 @@
+D:\.netSave\DeliveryMobileApp-main\LoginApp.Maui.csproj;x64
