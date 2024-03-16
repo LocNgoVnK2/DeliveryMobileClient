@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Maui.Views.OrderCompletePage"
+             Title="Đơn hàng đã giao">
+    <VerticalStackLayout>
+        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Text="Đơn cần nhận" Clicked="OnOrderPageClicked" />
+            <Button Text="Đơn đã giao" Clicked="OnOrderCompletePageClicked" />
+            <Button Text="Trang chủ" Clicked="OnMainClicked" />
+        </StackLayout>
+        <Label 
+            Text="Các đơn hàng đã giao"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontAttributes="Bold" />
+        <StackLayout x:Name="orderStackLayout">
+            <!-- Các OrderView sẽ được thêm vào đây -->
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

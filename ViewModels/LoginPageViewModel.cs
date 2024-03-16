@@ -29,7 +29,7 @@ public partial class LoginPageViewModel : ObservableObject
                 if (!string.IsNullOrWhiteSpace(UserName) && !string.IsNullOrWhiteSpace(Password))
                 {
                     LoginReponseModel user = await loginService.Login(UserName, Password);
-                    if (user == null)
+                    if (user == null || user.Role != "3")
                     {
                         await Shell.Current.DisplayAlert("Error", "Username/Password is incorrect", "Ok");
                         return;

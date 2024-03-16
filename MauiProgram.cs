@@ -18,8 +18,8 @@ namespace LoginApp.Maui
                 });
             builder.Services.AddSingleton<HomePage>();
             builder.Services.AddSingleton<LoginPage>();
-            builder.Services.AddSingleton<ContactPage>();
-            builder.Services.AddSingleton<AboutPage>();
+            builder.Services.AddSingleton<OrderCompletePage>();
+            builder.Services.AddSingleton<OrderPage>();
             builder.Services.AddSingleton<LoginPageViewModel>();
 
 #if DEBUG

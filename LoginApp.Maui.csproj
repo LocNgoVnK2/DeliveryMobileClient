@@ -61,16 +61,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\OrderCompletePage.xaml.cs">
+	    <DependentUpon>OrderCompletePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\OrderPage.xaml.cs">
+	    <DependentUpon>OrderPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="UserControls\FlyoutHeaderControl.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\AboutPage.xaml">
+	  <MauiXaml Update="UserControls\OrderCompleteView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ContactPage.xaml">
+	  <MauiXaml Update="UserControls\OrderView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\OrderPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\OrderCompletePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HomePage.xaml">

@@ -52,20 +52,26 @@ build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.UserControls
 build_metadata.AdditionalFiles.TargetPath = UserControls\FlyoutHeaderControl.xaml
 build_metadata.AdditionalFiles.RelativePath = UserControls\FlyoutHeaderControl.xaml
 
-[D:/.netSave/DeliveryMobileApp-main/Views/AboutPage.xaml]
+[D:/.netSave/DeliveryMobileApp-main/UserControls/OrderView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Views.AboutPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\AboutPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\AboutPage.xaml
-
-[D:/.netSave/DeliveryMobileApp-main/Views/ContactPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Views.ContactPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\ContactPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\ContactPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.UserControls.OrderView.xaml
+build_metadata.AdditionalFiles.TargetPath = UserControls\OrderView.xaml
+build_metadata.AdditionalFiles.RelativePath = UserControls\OrderView.xaml
 
 [D:/.netSave/DeliveryMobileApp-main/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Views.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+
+[D:/.netSave/DeliveryMobileApp-main/Views/OrderCompletePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Views.OrderCompletePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OrderCompletePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OrderCompletePage.xaml
+
+[D:/.netSave/DeliveryMobileApp-main/Views/OrderPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Maui.Views.OrderPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OrderPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OrderPage.xaml

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Maui.UserControls.OrderView">
+    <ContentView.Content>
+        <Frame CornerRadius="10" Margin="10">
+            <StackLayout Padding="10">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="MÃ HÓA ĐƠN: " FontAttributes="Bold" />
+                            <Span Text="{Binding IdOrder}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="HỌ VÀ TÊN: " FontAttributes="Bold" />
+                            <Span Text="{Binding FirstName}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="SỐ ĐIỆN THOẠI: " FontAttributes="Bold" />
+                            <Span Text="{Binding PhoneNumber}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="ĐỊA CHỈ: " FontAttributes="Bold" />
+                            <Span Text="{Binding Address}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+                <Label Text="{Binding TotalPrice, StringFormat='THÀNH TIỀN: {0} VND'}" FontAttributes="Bold"  />
+                <Label FontAttributes="Bold" >
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding PaymentStatus}" Value="true" >
+                            <Setter Property="Text" Value="Trạng thái hóa đơn: Đã thanh toán" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Label" Binding="{Binding PaymentStatus}" Value="false">
+                            <Setter Property="Text" Value="Trạng thái hóa đơn: Thu hộ" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Button Text="Nhận giao hàng" Clicked="OnReceiveOrderClicked" />
+            </StackLayout>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

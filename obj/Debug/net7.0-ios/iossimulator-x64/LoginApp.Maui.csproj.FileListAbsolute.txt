@@ -493,7 +493,6 @@ D:\.netSave\DeliveryMobileApp-main\bin\Debug\net7.0-ios\iossimulator-x64\libxama
 D:\.netSave\DeliveryMobileApp-main\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet-debug.dylib
 D:\.netSave\DeliveryMobileApp-main\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.a
 D:\.netSave\DeliveryMobileApp-main\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature
 D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\mauiimage.inputs
 D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\mauifont.inputs
 D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\mauisplash.inputs
@@ -547,3 +546,4 @@ D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\refint\
 D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\LoginApp.Maui.pdb
 D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\LoginApp.Maui.genruntimeconfig.cache
 D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\ref\LoginApp.Maui.dll
+D:\.netSave\DeliveryMobileApp-main\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature

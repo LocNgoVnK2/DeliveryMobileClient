@@ -1,26 +1,34 @@
-namespace LoginApp.Maui.Views;
+ï»¿namespace LoginApp.Maui.Views;
 
 public partial class HomePage : ContentPage
 {
 	public HomePage()
 	{
-		InitializeComponent();
-	}
-    private async void OnAboutClicked(object sender, EventArgs e)
+ 
+        InitializeComponent();
+        // áº¨n nÃºt "Navigate Up" khi trang xuáº¥t hiá»‡n
+        NavigationPage.SetHasBackButton(this, false);
+        NavigationPage.SetHasNavigationBar(this, false);
+    }
+    private async void OnOrderPageClicked(object sender, EventArgs e)
     {
         // ?i?u h??ng ??n trang AboutPage
-        await Navigation.PushAsync(new AboutPage());
+
+        await Navigation.PushAsync(new OrderPage());
     }
 
-    private async void OnContactClicked(object sender, EventArgs e)
+    private async void OnOrderCompletePageClicked(object sender, EventArgs e)
     {
         // ?i?u h??ng ??n trang ContactPage
-        await Navigation.PushAsync(new ContactPage());
+        await Navigation.PushAsync(new OrderCompletePage());
     }
 
     private async void OnSignOutClicked(object sender, EventArgs e)
     {
-        // Th?c hi?n ??ng xu?t ? ?ây
-        // Ví d?: xóa d? li?u ??ng nh?p, ?i?u h??ng v? trang ??ng nh?p, vv.
+        if (Preferences.ContainsKey(nameof(App.user)))
+        {
+            Preferences.Remove(nameof(App.user));
+        }
+        await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
     }
 }

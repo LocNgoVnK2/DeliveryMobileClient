@@ -10,8 +10,8 @@ namespace LoginApp.Maui
             InitializeComponent();
             this.BindingContext = new AppShellViewModel();
             Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
-            Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
-            Routing.RegisterRoute(nameof(ContactPage), typeof(ContactPage));
+            Routing.RegisterRoute(nameof(OrderPage), typeof(OrderPage));
+            Routing.RegisterRoute(nameof(OrderCompletePage), typeof(OrderCompletePage));
         }
     }
 }

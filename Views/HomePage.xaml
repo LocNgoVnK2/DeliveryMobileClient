@@ -1,7 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginApp.Maui.Views.HomePage"
-             Title="HomePage">
+             Title="Trang chủ">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -16,9 +16,8 @@
         </StackLayout>
 
         <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <Button Text="Cần giao" Clicked="OnAboutClicked" />
-            <Button Text="Đã nhận" Clicked="OnContactClicked" />
-            <Button Text="Đã xong" Clicked="OnContactClicked" />
+            <Button Text="Đơn cần nhận" Clicked="OnOrderPageClicked" />
+            <Button Text="Đơn đã giao" Clicked="OnOrderCompletePageClicked" />
             <Button Text="Sign Out" Clicked="OnSignOutClicked" />
         </StackLayout>
     </Grid>
