@@ -79,6 +79,9 @@
 	  <MauiXaml Update="UserControls\OrderCompleteView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="UserControls\OrderHomeView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="UserControls\OrderView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

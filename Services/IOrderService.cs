@@ -12,5 +12,7 @@ namespace LoginApp.Maui.Services
         Task<List<CheckOutBillViewModel>> QueryOrderByStoreId(OrderRequestModel model);
         Task<OrderPickupResponseModel> QueryOrderPickup(OrderPickupRequestModel model);
         Task<List<CheckOutBillViewModel>> QueryOrderCompleteByAccountID(OrderCompleteRequestModel model);
+        Task<List<CheckOutBillViewModel>> QueryOrderInProgressByAccountID(OrderInProgressRequestModel model);
+        Task<bool> QueryUpdateImageToCompeleOrder(UpdateImageAndCompleRequestViemModel model);
     }
 }

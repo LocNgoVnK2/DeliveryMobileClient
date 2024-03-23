@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.netSave\\DeliveryMobileApp-main\\LoginApp.Maui.csproj": {}
+    "D:\\.netSave\\KhoaLuanTotNghiep\\MobleAppModule\\DeliveryMobileApp-main\\LoginApp.Maui.csproj": {}
   },
   "projects": {
-    "D:\\.netSave\\DeliveryMobileApp-main\\LoginApp.Maui.csproj": {
+    "D:\\.netSave\\KhoaLuanTotNghiep\\MobleAppModule\\DeliveryMobileApp-main\\LoginApp.Maui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.netSave\\DeliveryMobileApp-main\\LoginApp.Maui.csproj",
+        "projectUniqueName": "D:\\.netSave\\KhoaLuanTotNghiep\\MobleAppModule\\DeliveryMobileApp-main\\LoginApp.Maui.csproj",
         "projectName": "LoginApp.Maui",
-        "projectPath": "D:\\.netSave\\DeliveryMobileApp-main\\LoginApp.Maui.csproj",
+        "projectPath": "D:\\.netSave\\KhoaLuanTotNghiep\\MobleAppModule\\DeliveryMobileApp-main\\LoginApp.Maui.csproj",
         "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-        "outputPath": "D:\\.netSave\\DeliveryMobileApp-main\\obj\\",
+        "outputPath": "D:\\.netSave\\KhoaLuanTotNghiep\\MobleAppModule\\DeliveryMobileApp-main\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

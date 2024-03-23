@@ -22,6 +22,7 @@ namespace LoginApp.Maui.ViewModels
 
         public Double ShippingFee { get; set; }
         public Double? DiscountPrice { get; set; }
+        public int? DeliveryId { get; set; }
 
     }
 }

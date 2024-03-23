@@ -95,5 +95,55 @@ namespace LoginApp.Maui.Services
                 throw new HttpRequestException($"Login failed with status code: {response.StatusCode}");
             }
         }
+
+        public async Task<List<CheckOutBillViewModel>> QueryOrderInProgressByAccountID(OrderInProgressRequestModel model)
+        {
+            var client = new HttpClient();
+            string url = BaseUrl.url + $"/Order/GetOrderInProgressByUserId?AccountId={model.AccountId}";
+            client.BaseAddress = new Uri(url);
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", model.BearerToken);
+
+            HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var listOrder = JsonConvert.DeserializeObject<List<CheckOutBillViewModel>>(responseContent);
+                return listOrder;
+            }
+            else
+            {
+                return null;
+                throw new HttpRequestException($"Login failed with status code: {response.StatusCode}");
+            }
+        }
+
+        public async Task<bool> QueryUpdateImageToCompeleOrder(UpdateImageAndCompleRequestViemModel model)
+        {
+            var client = new HttpClient();
+            string url = BaseUrl.url + $"/Order/CompleteOrder";
+            client.BaseAddress = new Uri(url);
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", model.BearerToken);
+            string jsonRequest = JsonConvert.SerializeObject(new UpdateImageAndCompleRequestModel
+            {
+                DeliveryId = model.DeliveryId,
+                PickUpPhoto = model.PickUpPhoto
+            });
+            HttpContent content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await client.PostAsync(client.BaseAddress, content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+                throw new HttpRequestException($"Login failed with status code: {response.StatusCode}");
+            }
+        }
     }
 }

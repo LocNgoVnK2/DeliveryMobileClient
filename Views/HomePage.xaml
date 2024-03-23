@@ -7,18 +7,20 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-
-        <StackLayout Grid.Row="0">
-            <Label 
-                Text="Welcome Home!"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-        </StackLayout>
+        <Label 
+          Text="Các đơn hàng đang trong quá trình giao"
+          VerticalOptions="Center" 
+          HorizontalOptions="Center"
+          FontAttributes="Bold" />
 
         <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
             <Button Text="Đơn cần nhận" Clicked="OnOrderPageClicked" />
             <Button Text="Đơn đã giao" Clicked="OnOrderCompletePageClicked" />
             <Button Text="Sign Out" Clicked="OnSignOutClicked" />
+        </StackLayout>
+  
+        <StackLayout x:Name="orderStackLayout">
+            <!-- Các OrderView sẽ được thêm vào đây -->
         </StackLayout>
     </Grid>
 </ContentPage>

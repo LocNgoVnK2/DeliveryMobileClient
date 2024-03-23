@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ZfAciZeEdrkmoyYVHjYjyxwMH4WlBu57/dNkj68qfYwL1Eb8/WzWOgPcXNiwLmD2Ss2ccaf+G/qe5dYo4JLLA==",
+  "dgSpecHash": "HBnr9irDlQ4Wb66zDKT2LUfFvQIxQVzSNjqkb/nXALYbnGhJ3WHKJQGX4GFS4rhGymuhGWg0G+z8ICNdUgdI2g==",
   "success": true,
-  "projectFilePath": "D:\\.netSave\\DeliveryMobileApp-main\\LoginApp.Maui.csproj",
+  "projectFilePath": "D:\\.netSave\\KhoaLuanTotNghiep\\MobleAppModule\\DeliveryMobileApp-main\\LoginApp.Maui.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\a\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
