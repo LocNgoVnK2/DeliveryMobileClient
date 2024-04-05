@@ -2,25 +2,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginApp.Maui.Views.HomePage"
              Title="Trang chủ">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Label 
-          Text="Các đơn hàng đang trong quá trình giao"
-          VerticalOptions="Center" 
-          HorizontalOptions="Center"
-          FontAttributes="Bold" />
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
 
-        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <Button Text="Đơn cần nhận" Clicked="OnOrderPageClicked" />
-            <Button Text="Đơn đã giao" Clicked="OnOrderCompletePageClicked" />
-            <Button Text="Sign Out" Clicked="OnSignOutClicked" />
-        </StackLayout>
-  
-        <StackLayout x:Name="orderStackLayout">
-            <!-- Các OrderView sẽ được thêm vào đây -->
-        </StackLayout>
-    </Grid>
+            <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Text="Đơn cần nhận" Clicked="OnOrderPageClicked" />
+                <Button Text="Đơn đã giao" Clicked="OnOrderCompletePageClicked" />
+                <Button Text="Sign Out" Clicked="OnSignOutClicked" />
+            </StackLayout>
+
+            <StackLayout x:Name="orderStackLayout" Grid.Row="0" VerticalOptions="FillAndExpand">
+                <!-- Content that you want to be scrollable goes here -->
+                <!-- You can add more StackLayouts, Labels, Buttons, etc. -->
+            </StackLayout>
+        </Grid>
+    </ScrollView>
 </ContentPage>
+
+

@@ -3,19 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginApp.Maui.Views.OrderCompletePage"
              Title="Đơn hàng đã giao">
-    <VerticalStackLayout>
-        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <Button Text="Đơn cần nhận" Clicked="OnOrderPageClicked" />
-            <Button Text="Đơn đã giao" Clicked="OnOrderCompletePageClicked" />
-            <Button Text="Trang chủ" Clicked="OnMainClicked" />
-        </StackLayout>
-        <Label 
-            Text="Các đơn hàng đã giao"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            FontAttributes="Bold" />
-        <StackLayout x:Name="orderStackLayout">
-            <!-- Các OrderView sẽ được thêm vào đây -->
-        </StackLayout>
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Text="Đơn cần nhận" Clicked="OnOrderPageClicked" />
+                <Button Text="Đơn đã giao" Clicked="OnOrderCompletePageClicked" />
+                <Button Text="Trang chủ" Clicked="OnMainClicked" />
+            </StackLayout>
+            <Label 
+                Text="Các đơn hàng đã giao"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontAttributes="Bold" />
+            <StackLayout x:Name="orderStackLayout">
+                <!-- Các OrderView sẽ được thêm vào đây -->
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
